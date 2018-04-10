@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Julien's Games</title>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="./games.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+       <script src="./games.js"></script>
+    </head>
+    <body>
+        <header>
+           <div>
+               <a href="/">← Back</a>
+           </div>
+            <h1>Julien's Games</h1>
+        </header>
+        
+        <section id="tron" class="break">
+            <h2>Tron</h2>
+            <nav class="tablist">
+                <button onclick="switchTron()" id="simpleTronButton" class="tab active">Boosted 2-Player</button>
+                <button onclick="switchTron()" class="tab">Grid 1-Player</button>
+            </nav>
+            <div id="simpleTron" class="tabcontent active">
+                <h3>2-player tron</h3>
+                <p>A simple 2-player tron game built using <a href="http://processingjs.org/">processing.js</a>. Don't run into your opponent's path!</p>
+                <h4>Instructions</h4>
+                <p>
+                    Green player use <span class="key">a</span><span class="key">s</span><span class="key">w</span><span class="key">d</span> keys to move and <span class="key">q</span> to boost.
+                </p>
+                <p>
+                    Red player use <span class="key">j</span><span class="key">i</span><span class="key">i</span><span class="key">l</span> keys to move and <span class="key">u</span> to boost.
+                </p>
+                <iframe id='ifr' width='600' height='635' scrolling='no' style='background: url(//studio.processingtogether.com/static/img/jun09/pad/connectingbar.gif) no-repeat center 60px;' src='//studio.processingtogether.com/sp/pad/iframe/ro.9lOji8K2eTEYk/rev.280?autostart=0'></iframe>
+            </div>
+            
+            <div id="gridTron" class="tabcontent">
+                <h3>Grid Tron</h3>
+                <p>You're the cyan bike on the left. Use the arrow keys to control the bike, <span class="key">s</span> to start, and <span class="key">r</span> at anytime to restart.</p>
+                <iframe id='ifr' width='600' height='635' scrolling='no' style='background: url(//studio.processingtogether.com/static/img/jun09/pad/connectingbar.gif) no-repeat center 60px;' src='//studio.processingtogether.com/sp/pad/iframe/ro.9oK$feCim2Pn7/rev.81?autostart=0'></iframe>
+            </div>
+            
+        </section>
+        
+        
+        <section>
+            <h3>Snake</h3>
+            <p>
+              Try to gobble as many pieces of food as you can! What's your record? (mine is 19). Warning: snake goes faster as it eats more food.
+            </p>
+            <h4>Instructions</h4>
+            <p>Press <span class="key">space</span> to pause and unpause. Press any arrow to start.</p>
+            <iframe id='ifr' width='600' height='635' scrolling='no' style='background: url(//studio.processingtogether.com/static/img/jun09/pad/connectingbar.gif) no-repeat center 60px;' src='//studio.processingtogether.com/sp/pad/iframe/ro.9KZpHb4ai2HS5/rev.19?autostart=0'></iframe>
+        </section>
+    </body>
+</html>
