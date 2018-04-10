@@ -1,0 +1,49 @@
+/* line 10, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+html body {
+  font-family: Lato, sans-serif;
+  background: #4F5465;
+  padding: 0;
+  margin: 0; }
+
+/* line 17, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+p {
+  font-weight: 300; }
+
+/* line 20, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+h1 {
+  font-weight: 400; }
+
+/* line 24, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+header, footer {
+  color: #F2F2F2;
+  padding: 1em;
+  clear: both; }
+  /* line 28, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+  header a, footer a {
+    color: #F2F2F2;
+    text-decoration: none; }
+    /* line 32, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+    header a:hover, footer a:hover {
+      color: white; }
+
+/* line 38, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+section {
+  background: white;
+  padding: 1em;
+  max-width: 768px;
+  float: left; }
+  /* line 42, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+  section.break {
+    margin-bottom: 1em; }
+
+@media screen and (min-width: 788px) {
+  /* line 52, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+  section {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+/* line 57, /Users/julien/dev/julien/j55blanchet.github.io/main.scss */
+p {
+  max-width: 30em; }
+
+/*# sourceMappingURL=main.css.map */
