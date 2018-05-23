@@ -1,38 +1,9 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Julien Blanchet</title>        
-        <link rel="stylesheet" href="/main.css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	</head>
-	<body>
-<!--
-	    <header>
-	        <nav>
-                <h4>Navigation</h4>
-	            <ul>
-	                <li>Professional Life</li>
-	                <li>Teardrop Camper Adventure</li>
-	                <li>Sketches</li>
-	            </ul>
-	        </nav>
-	    </header>
--->
-	    <section class="main">
-            <h2>Welcome</h2>
-	        <p>This site is currently under development. Soon, expect to read about my professional adventures, teardrop camping adventures, blog posts, and whatever else I want to put on here!</p>
-	        
-	    </section>
-	    <br>
-	    <section id="sketches">
-	        <h2>Sketches</h2>
-	        <ul>
-	            <li><a href="flower/flower.html">Mother's Day Flower</a></li>
-	            <li><a href="processinggames/games.html">Processing Games</a></li>
-	        </ul>
-	    </section>
-	    <footer>
-	        ©2018 Julien Blanchet
-	    </footer>
-	</body>
-</html>
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <h4>{{ post.date | date: "%m-%d-%Y" }}</h4>
+  <p>{{ post.content | strip_html | truncatewords:10}}</p>
+{% endfor %}
