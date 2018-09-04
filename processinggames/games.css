@@ -1,0 +1,39 @@
+/* line 1, /Users/julien/dev/julien/j55blanchet.github.io/processinggames/games.scss */
+span.key {
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 0.2em;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-left: 2px;
+  padding-right: 2px; }
+
+/* line 12, /Users/julien/dev/julien/j55blanchet.github.io/processinggames/games.scss */
+nav.tablist {
+  overflow: hidden; }
+  /* line 15, /Users/julien/dev/julien/j55blanchet.github.io/processinggames/games.scss */
+  nav.tablist button.tab {
+    background-color: #eee;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1em;
+    transition: 0.3s; }
+    /* line 24, /Users/julien/dev/julien/j55blanchet.github.io/processinggames/games.scss */
+    nav.tablist button.tab:hover {
+      background-color: #ddd; }
+    /* line 28, /Users/julien/dev/julien/j55blanchet.github.io/processinggames/games.scss */
+    nav.tablist button.tab.active {
+      cursor: auto;
+      background-color: #ccc; }
+
+/* line 35, /Users/julien/dev/julien/j55blanchet.github.io/processinggames/games.scss */
+div.tabcontent {
+  display: none; }
+  /* line 38, /Users/julien/dev/julien/j55blanchet.github.io/processinggames/games.scss */
+  div.tabcontent.active {
+    display: inherit; }
+
+/*# sourceMappingURL=games.css.map */

@@ -1,0 +1,41 @@
+span.key {
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 0.2em;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+nav.tablist {
+    overflow: hidden;
+    
+    button.tab {
+        background-color: #eee;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 1em;
+        transition: 0.3s;
+        
+        &:hover {
+            background-color: #ddd
+        }
+        
+        &.active {
+            cursor: auto;
+            background-color: #ccc
+        }
+    }
+}
+
+div.tabcontent {
+    display: none;
+    
+    &.active {
+        display: inherit;
+    }
+}
