@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Pong | Coding 1 | Julien.Studio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js"></script>
+        <link rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="section">
+            <h1 class="title">
+                Coding 1: Pong Project
+            </h1>
+            <p class="subtitle">
+                A classic, classic game!
+            </p>
+            <div class="columns is-desktop is-centered">
+                <div class="column is-one-third-desktop content">
+                    <h2>Requirements</h2>
+                    <div class="box">
+                        <div>
+                            <p><a class="button is-link" href="https://www.khanacademy.org/computer-programming/pong-game-coding-i/5340322718711808">START WITH THIS CODE &nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+                            <p>For Coding 1, we're creating a 1-player pong game. The rules are as follows:</p>
+                            <ul>
+                                <li>There's a rectangular paddle along the bottom of of the screen controller by the player</li>
+                                <ul>
+                                    <li>It tries to <u>follow</u> the mouse. <i>It doesn't just "stick" the the mouse's location</i>
+                                    <li>It stops at the edges of the screen.</li>
+                                </ul>
+                                <li>There's 1 ball bouncing around the screen</li>                    
+                                <ul>
+                                    <li>The ball keeps moving straight unless it hits something</li>
+                                    <li>If the ball hits the left, top, or right walls, it simply bounces off of them</li>
+                                    <li>If the ball hits the paddle, it bounces off the paddle</li>
+                                    <li>If the ball hits the bottom all, the game is over</li>
+                                </ul>                    
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- End requirements column -->
+                <div class="column content">
+                    <h2>Tips</h2>
+                        <div class="columns is-multiline">
+                            <div class="column is-half is-full-desktop is-half-widescreen">
+                                <div class="box content">
+                                    <h4>Recommended Steps</h4>
+                                    <ol>
+                                        <li>Make a ball on the screen, and get it to move</li>
+                                        <li>Get the ball to bounce off the edges of the screen</li>
+                                        <li>Make a paddle along the bottom wall</li>
+                                        <li>Get the paddle to follow <i>(not stick to)</i> the mouse's x-coordinate movements</li>
+                                        <li>Get the ball bouncing off the paddle</li>
+                                        <li>Detect when the ball hits the bottom wall</li>
+                                        <ul>
+                                            <li>For Oct 17th homework, set <code>noLoop()</code> to stop game</li>
+                                        </ul>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="column is-half is-full-desktop is-half-widescreen">
+                                <div class="box content">
+                                    <h4>Getting the ball to bounce</h4>
+                                    <pre class="prettyprint">// ball moves right if ballXSpd is positive
+// and left if ballXSpd is negative
+ballX += ballXSpd;
+// When the right side of the ball is past 
+// the right side of the screen ...
+if(ballX + ballRadius > width){
+    // We negate the x velocity, which causes 
+    // it to bounce
+    ballXSpd=-ballXSpd;
+}</pre>
+                                </div>
+                            </div>
+                            <div class="column is-half is-full-desktop is-half-widescreen">
+                                <div class="box content">
+                                    <h4>Getting the paddle to follow the mouse</h4>
+                                    <p>Remember our "ball following the mouse" catalyst? This is the same concept!</p>
+                                    <img src="./paddle-follow-mouse.png" alt="">
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="box content">
+                                    <h4>Detecting if ball hits paddle</h4>
+                                    <p>In addition to testing the y postiion of the ball, you also need to ensure the ball is horizontally within the paddle</p>
+                                    <img src="PaddleHit.png" alt="">
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="box content">
+                                    <h4>Pausing and resuming the game</h4>
+                                    <p>Two functions will help you immensely when figuring out how to pause and restart the game: <code>loop()</code> and <code>noLoop()</code></p>
+                                    <ul>
+                                        <li><code>noLoop()</code> tells processing.js to pause the draw loop (stop making new frames). So the <code>draw()</code> function stops getting called.</li>
+                                        <ul>
+                                            <li>Think of this like <code>frameRate(0);</code> (<code>frameRate(0)</code> doesn't to what you expect)</li>
+                                            <li>Other functions, like <code>mouseClicked()</code>, will still get called</li>
+                                        </ul>
+                                        <li><code>loop()</code> is the opposite: it tells processing.js to resume the draw loop</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
