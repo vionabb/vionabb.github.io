@@ -15,7 +15,7 @@
       body {
         margin: 0;
         background: #444;
-      }
+      }A
       #gameContainer {
         width: 100vw;
         height: 100vh;
@@ -101,7 +101,7 @@
 
   <script src="Build/UnityLoader.js"></script>
   <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webgl-prod.json", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webgl-prod-2.json", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
       return;
