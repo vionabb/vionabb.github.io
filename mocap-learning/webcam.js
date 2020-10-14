@@ -54,8 +54,8 @@ function postFiles(url, filename) {
         type: 'video/webm'
     });
 
-    videoElement.src = '';
-    videoElement.srcObject = null;
+    // videoElement.src = '';
+    // videoElement.srcObject = null;
     
     xhr(url, file, responseText => {
         console.log('File successfully uploaded to server');
