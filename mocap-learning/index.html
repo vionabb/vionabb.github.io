@@ -109,9 +109,19 @@
 
         <br>
 
-        <div id="consentOptions">
-          <a class="button is-danger" onclick="consent('decline')">Disagree</a>
-          <a class="button is-success" onclick="consent('agree')">Agree - Grant Camera Access</a>
+        <div id="consentOptions" class="field">
+            <label for="participantId" class="label">ParticipantId</label>
+            <p>If you're from Mechanical Turk, put your mechanical turk ID here. Otherwise, put your email address.</p>
+            <div class="control">
+              <input oninput="participantIdChanged()" type="text" class="input" id="participantId" name="participantId">
+            </div>
+            <p id="participantIdHelp" class="help is-danger"></p>
+        </div>
+        
+        <div class="consentActions">
+          <a class="button is-danger" disabled onclick="consent('decline')">Disagree</a>
+          <a class="button is-success" disabled onclick="consent('agree')">Agree - Grant Camera 
+          Access</a>
         </div>
         <div id="consentDecline" style="display:none" class="notification is-warning">
           You declined the consent form and therefore cannot participate in the experiment. If you'd like to change your mind, refresh the page.
@@ -129,9 +139,41 @@
     </div>
 
     <script>
+      var isParticipantIdValid = false;
+
+      function participantIdChanged() {
+        let input = document.querySelector('#participantId')
+        let help = document.querySelector('#participantIdHelp')
+        let buttons = document.querySelectorAll('.consentActions a')
+
+        input.classList.remove('is-success')
+        input.classList.remove('is-danger')
+        help.innerHTML = ""
+        buttons.forEach(b => b.setAttribute('disabled', true))
+
+        window.userId = input.value;
+
+        if (input.value.length < 6) {
+          input.classList.add('is-danger');
+          help.innerHTML = "Id or email must be at least 6 characters long"
+          isParticipantIdValid = false;
+          buttons.forEach(b => b.setAttribute('disabled', true))
+          return
+        }
+
+        isParticipantIdValid = true;
+        buttons.forEach(b => b.removeAttribute('disabled'))
+        input.classList.add('is-success');
+        console.log(input.value);
+
+        
+        // if (input.value)
+      }
 
       function consent(consentStatus) {
-        
+        if (!isParticipantIdValid) {
+          return;
+        }
         if (consentStatus != "agree") {
           document.querySelector('#consentOptions').style.display = "none";
           document.querySelector('#consentDecline').style.display = "";
@@ -162,6 +204,8 @@
         document.querySelector('#loader').style.display = "";
 
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/app.json", {onProgress: UnityProgress});
+
+        window.unityInstance = gameInstance;
     function UnityProgress(gameInstance, progress) {
       if (!gameInstance.Module) {
         return;

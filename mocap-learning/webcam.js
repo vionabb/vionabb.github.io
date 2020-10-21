@@ -74,8 +74,12 @@ function xhr(url, data, callback) {
     };
 
     request.upload.onprogress = e => {
-        let percent = Math.round(100 * e.loaded / e.total);
-        console.log(`${url} upload: ${percent} complete`);
+        let percent = e.loaded / e.total;
+        // console.log(`${url} upload: ${percent} complete`);
+
+        if (window.unityInstance) {
+            unityInstance.SendMessage('Main Camera', 'UploadProgressed', percent);
+        }
     }
 
     request.upload.onload = () => {
