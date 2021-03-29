@@ -2,9 +2,9 @@
 "companyName": "DartmouthHumanMotionLab",
 "productName": "2020-mocap-teaching",
 "productVersion": "0.1",
-"dataUrl": "webgl-6-16-20--3.data.unityweb",
-"wasmCodeUrl": "webgl-6-16-20--3.wasm.code.unityweb",
-"wasmFrameworkUrl": "webgl-6-16-20--3.wasm.framework.unityweb",
+"dataUrl": "app.data.unityweb",
+"wasmCodeUrl": "app.wasm.code.unityweb",
+"wasmFrameworkUrl": "app.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 2.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
@@ -12,5 +12,5 @@
 "cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
 "multithreading": false,
-"unityVersion": "2019.3.7f1"
+"unityVersion": "2019.4.12f1"
 }
