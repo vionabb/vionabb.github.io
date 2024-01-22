@@ -1,1 +1,0 @@
-import{e,f as o,d as t}from"../chunks/disclose-version.Wi8n1ata.js";import{p as m,a as r}from"../chunks/runtime.Wi1j2Fie.js";var i=t('<main class="mw-prose p-4"><h2 class="text-2xl">Publications</h2></main>');function f(a,s){r(s,!1);var p=o(a,!0,i);e(a,p),m()}export{f as component};
