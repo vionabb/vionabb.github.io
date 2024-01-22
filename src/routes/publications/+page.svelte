@@ -86,7 +86,7 @@ let publications = $state(
             ]
         },
         {
-            title: 'Teaching american sign language in mixed reality',
+            title: 'Teaching American Sign Language in Mixed Reality',
             year: 2020,
             conference: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies',
             authors: ['Qijia Shao', 'Amy Sniffen', 'Julien Blanchet', 'Megan E Hillis', 'Xinyu Shi', 'Themistoklis K Haris', 'Jason Liu', 'Jason Lamberton', 'Melissa Malzkuhn', 'Lorna C Quandt', 'James Mahoney', 'David JM Kraemer', 'Xia Zhou', 'Devin Balkcom'],
