@@ -76,6 +76,14 @@ let routesStates = $derived(
                     </a>
                 </li>
                 {/each}
+                <ul class="menu menu-horizontal p-0">
+                    <li><a href="https://www.linkedin.com/in/julienbblanchet/" class="btn btn-ghost text-xl btn-sm" aria-label="LinkedIn">
+                            <span class="icon-[fa6-brands--linkedin]"></span>
+                    </a></li>
+                    <li><a href="https://github.com/j55blanchet" class="btn btn-ghost text-xl btn-sm" aria-label="GitHub">
+                        <span class="icon-[fa6-brands--github]"></span>
+                    </a></li>
+                </ul>
             </ul>
         </div>
     </div>
