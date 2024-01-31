@@ -1,12 +1,18 @@
-<main class="mw-prose p-4 prose mx-auto">
-    <h1 class="mb-0">Hi! I'm Julien <small class="text-base-300">He/They</small></h1>
+<main class="max-w-prose p-4 mx-auto prose">
+    <div class="prose">
+        <h1 class="font-slabserif">Hi! I'm Julien</h1>
+    </div>
 
-    <aside class="badge">PhD Student in Robotics &amp; HCI @ Dartmouth College</aside>
+    <aside class="p-2 bg-base-200">PhD Student in Robotics &amp; HCI @ Dartmouth College
+        <!-- <span class="badge">They/Them</span> -->
+    </aside>
+    
 
 
-    <p>I'm a creative technologist. I'm currently in my 5th year pursuing a PhD Student in computer science at Dartmouth College, advised by <a href="https://rlab.cs.dartmouth.edu/devin/">Prof. Devin Balkcom</a>.         
+    <p class="">
+        I'm a creative technologist. I'm currently in my 5th year pursuing a PhD Student in computer science at Dartmouth College, advised by <a href="https://rlab.cs.dartmouth.edu/devin/">Prof. Devin Balkcom</a>.         
     </p>
-    <p>
+    <p class="">
         Before this, I've worked as a high school teacher, software lead at a startup, and software engineer at Microsoft.
         
         I'm passionate about creating immersive experiences that inspire wonder, help people learn new skills, and connect people together in authentic ways.
