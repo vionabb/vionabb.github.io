@@ -14,7 +14,7 @@ module.exports = {
     },
     daisyui: {
         theme: 'julienlight',
-        darkTheme: false,
+        darkTheme: 'juliendark',
         themes: [
             {
                 julienlight:  {

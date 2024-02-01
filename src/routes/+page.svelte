@@ -1,4 +1,4 @@
-<main class="max-w-prose p-4 mx-auto prose">
+<main class="max-w-prose p-4 mx-auto prose " contenteditable="true">
     <div class="prose">
         <h1 class="font-slabserif">Hi! I'm Julien</h1>
     </div>
