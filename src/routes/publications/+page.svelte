@@ -97,9 +97,9 @@ let publications = $state(
             <span>{pub.year}</span>.
             
             {#if pub.doi}
-                <a class="btn btn-xs" href={"https://doi.org/" + pub.doi} title={"DOI: " + pub.doi}>Paper <span class="icon-[ic--baseline-open-in-new]"></span></a>
+                <a class="btn btn-xs btn-primary" href={"https://doi.org/" + pub.doi} title={"DOI: " + pub.doi}>Paper <span class="icon-[ic--baseline-open-in-new]"></span></a>
             {:else if pub.nonDoiPaperLink}
-                <a href={pub.nonDoiPaperLink}>Paper <span class="icon-[ic--baseline-open-in-new]"></span></a>
+                <a class="btn btn-xs btn-primary" href={pub.nonDoiPaperLink}>Paper <span class="icon-[ic--baseline-open-in-new]"></span></a>
             {/if}
             
         </div>

@@ -3,9 +3,15 @@
 </script>
 
 <main class="mw-prose p-4 prose mx-auto">
-    <h1 class="mb-0">Sorry, we hit an error</h1>
+    <h1 class="font-slabserif">Sorry, we have a problem</h1>
 
-    <p>{$page.status}: {$page.error?.message}</p>
+    <p>We ran into a  
+        {#if ($page.status ?? 200) >= 400} 
+            <code>HTTP 404</code>
+        {/if}
+        error 
+        while loading this page{#if $page.error?.message}: <code>&quot;{$page.error.message}&quot;</code>{/if}
+    </p>
 
     <!-- TODO:
     <ul>

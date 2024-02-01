@@ -13,21 +13,27 @@ module.exports = {
         }
     },
     daisyui: {
+        theme: 'julienlight',
         darkTheme: false,
         themes: [
             {
-                light:  {
+                julienlight:  {
                     "color-scheme": "light",
-                    "primary": "oklch(49.12% 0.3096 275.75)",
-                    "secondary": "oklch(69.71% 0.329 342.55)",
-                    "secondary-content": "oklch(98.71% 0.0106 342.55)",
-                    "accent": "oklch(76.76% 0.184 183.61)",
-                    "neutral": "#2B3440",
-                    "neutral-content": "#D7DDE4",
-                    "base-100": "oklch(100% 0 0)",
-                    "base-200": "#F2F2F2",
-                    "base-300": "#E5E6E6",
-                    "base-content": "#1f2937",
+                    "primary": "#06b6d4",
+
+                    "secondary": "#86efac",
+                    // "secondary-content": "oklch(98.71% 0.0106 342.55)",
+                    "accent": "#d8b4fe",
+                    "neutral": "#d1b5db",
+                    // "neutral-content": "#D7DDE4",
+                    "base-100": "f5f5f4",
+                    // "base-200": "#F2F2F2",
+                    // "base-300": "#E5E6E6",
+                    // "base-content": "#1f2937",
+                    "info": "#70efef",
+                    "success": "42d57e",
+                    "warning": "#eac318",
+                    "error": "#e07878",
           
                     // "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
                     // "--rounded-btn": "0.5rem", // border radius rounded-btn utility class, used in buttons and similar element
@@ -39,17 +45,33 @@ module.exports = {
                     // "--tab-border": "1px", // border width of tabs
                     // "--tab-radius": "0.5rem", // border radius of tabs
                   },
-                  dark: {
+                  juliendark: {
                     "color-scheme": "dark",
-                    "primary": "oklch(65.69% 0.196 275.75)",
-                    "secondary": "oklch(74.8% 0.26 342.55)",
-                    "accent": "oklch(74.51% 0.167 183.61)",
-                    "neutral": "#2a323c",
-                    "neutral-content": "#A6ADBB",
-                    "base-100": "#1d232a",
-                    "base-200": "#191e24",
-                    "base-300": "#15191e",
-                    "base-content": "#A6ADBB",
+                    "primary": "#06b6d4",
+
+                    "secondary": "#86efac",
+                    // "secondary-content": "oklch(98.71% 0.0106 342.55)",
+                    "accent": "#d8b4fe",
+                    "neutral": "#9ca3af",
+                    // "neutral-content": "#D7DDE4",
+                    "base-100": "4b5563",
+                    // "base-200": "#F2F2F2",
+                    // "base-300": "#E5E6E6",
+                    // "base-content": "#1f2937",
+                    "info": "#70efef",
+                    "success": "42d57e",
+                    "warning": "#eac318",
+                    "error": "#e07878",
+
+                    // "primary": "oklch(65.69% 0.196 275.75)",
+                    // "secondary": "oklch(74.8% 0.26 342.55)",
+                    // "accent": "oklch(74.51% 0.167 183.61)",
+                    // "neutral": "#2a323c",
+                    // "neutral-content": "#A6ADBB",
+                    // "base-100": "#1d232a",
+                    // "base-200": "#191e24",
+                    // "base-300": "#15191e",
+                    // "base-content": "#A6ADBB",
                   }
             }
         ],
