@@ -1,20 +1,20 @@
-<main class="max-w-prose p-4 mx-auto prose " contenteditable="true">
-    <div class="prose">
-        <h1 class="font-slabserif">Hi! I'm Julien</h1>
-    </div>
+<article class="max-w-prose p-4 mx-auto prose prose-headings:font-slabserif">
 
-    <aside class="p-2 bg-base-200">PhD Student in Robotics &amp; HCI @ Dartmouth College
-        <!-- <span class="badge">They/Them</span> -->
-    </aside>
+    <h1 class="mb-2">
+        Hi! I'm Julien
+        <aside class="inline text-lg text-base-300">They/Them</aside>
+    </h1>
     
-
-
-    <p class="">
-        I'm a creative technologist. I'm currently in my 5th year pursuing a PhD Student in computer science at Dartmouth College, advised by <a href="https://rlab.cs.dartmouth.edu/devin/">Prof. Devin Balkcom</a>.         
+    <p>
+        I'm a creative technologist. I'm currently in my 5th year pursuing a PhD Student in the <a href="https://rlab.cs.dartmouth.edu/home/">Robotics &amp; Reality Lab</a> at Dartmouth College, advised by <a href="https://rlab.cs.dartmouth.edu/devin/">Prof. Devin Balkcom</a>.         
     </p>
-    <p class="">
-        Before this, I've worked as a high school teacher, software lead at a startup, and software engineer at Microsoft.
-        
+    <p>
+        I've taken circuitous path getting to this point - since graduating from Dartmouth in 2015 with a computer science major and education minor, I've worked at a large tech company (Microsoft), small farming-technology startup (Grove Labs), and as a high school teacher (The Winchendon School)
+    </p>
+    <p>
+        My research interests lie within the fields of Human-Computer Interaction, Robotics, and Spatial Computing. Most of my current projects are focused on human motion teaching, flipping learning-by-demonstration on its head by using computers to teach us how to speak sign language, dance, and do yoga. To accomplish this, we ...
+    </p>
+    <p>
         I'm passionate about creating immersive experiences that inspire wonder, help people learn new skills, and connect people together in authentic ways.
     </p>
 
@@ -26,4 +26,4 @@
 
         <li>Include some sort of graphics on about page to make it more interesting</li>
    </ul> -->
-</main>
+</article>
