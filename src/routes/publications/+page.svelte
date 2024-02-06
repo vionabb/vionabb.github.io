@@ -33,13 +33,7 @@ let publications = $state(
             authors: ['Julien Blanchet', 'Megan E Hillis', 'Yeongji Lee', 'Qijia Shao', 'Xia Zhou', 'David JM Kraemer', 'Devin Balkcom'],
             highlightAuthorIndex: 0,
             doi: '10.1145/3586182.3615801',
-            artifacts: [
-                {
-                    title: 'Paper',
-                    href: 'https://dl.acm.org/doi/abs/',
-                    external: true,
-                }
-            ]
+            artifacts: []
         },
         {
             title: 'Automatic Generation and Teaching of Dance Lessons from Video',
@@ -72,7 +66,7 @@ let publications = $state(
             conference: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies',
             authors: ['Qijia Shao', 'Amy Sniffen', 'Julien Blanchet', 'Megan E Hillis', 'Xinyu Shi', 'Themistoklis K Haris', 'Jason Liu', 'Jason Lamberton', 'Melissa Malzkuhn', 'Lorna C Quandt', 'James Mahoney', 'David JM Kraemer', 'Xia Zhou', 'Devin Balkcom'],
             highlightAuthorIndex: 2,
-            doi: 'https://dl.acm.org/doi/abs/10.1145/3432211',
+            doi: '10.1145/3432211',
         }
     ] as Publication[]
 )
