@@ -126,7 +126,7 @@ function setTheme(event: Event) {
         <label class="drawer-overlay" for="drawer-toggle-checkbox" aria-label="Close menu"></label>
         <div class="bg-base-200 min-h-screen">            
             <ul class="menu">
-                <li class="menu-title text-xl font-slabserif font-light">Julien Blanchet</li>
+                <li class="menu-title text-xl font-slabserif font-light"><span><strong class="font-bold inline">Julien</strong> Blanchet</span></li>
                 {#each routesStates as routeWithState}
                 <li>
                     <a  href={routeWithState.href} 
