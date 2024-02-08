@@ -1,13 +1,23 @@
+<script lang="ts">
+    import LogoSvg from './logo.svg';
+
+</script>
+
 <article class="max-w-prose p-4 mx-auto prose prose-headings:font-slabserif">
 
     <h1 class="mb-2">
         Hi! I'm Julien
-        <aside class="inline text-lg text-base-300">He/They</aside>
+        <aside class="badge badge-neutral">He/They</aside>
     </h1>
+
     
     <p>
         I'm a creative technologist. I'm currently in my 5th year pursuing a PhD Student in the <a href="https://rlab.cs.dartmouth.edu/home/">Robotics &amp; Reality Lab</a> at Dartmouth College, advised by <a href="https://rlab.cs.dartmouth.edu/devin/">Prof. Devin Balkcom</a>.         
     </p>
+
+    
+    <!-- <img src={LogoSvg} alt="" class="text-center m-auto"> -->
+
     <p>
         I've taken circuitous path getting to this point - since graduating from Dartmouth in 2015 with a computer science major and education minor, I've worked as an software engineer at a large tech company (Microsoft) and small farming-technology startup (<a href="https://news.mit.edu/2015/mit-startup-grove-labs-brings-urban-agriculture-indoors-1110">Grove Labs</a>), and then as a high school teacher (<a href="https://winchendon.org/">The Winchendon School</a>). In 2019, I returned to Dartmouth to pursue a PhD in Computer Science.
     </p>
