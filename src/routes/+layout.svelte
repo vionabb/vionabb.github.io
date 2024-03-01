@@ -21,7 +21,7 @@ const routes: {
     },
     {
         title: 'Resumé',
-        href: '/resume-fall-2023.pdf',
+        href: '/blanchet-resume.pdf',
         external: true,
     },
     
