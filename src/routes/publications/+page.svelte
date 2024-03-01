@@ -33,13 +33,7 @@ let publications = $state(
             authors: ['Julien Blanchet', 'Megan E Hillis', 'Yeongji Lee', 'Qijia Shao', 'Xia Zhou', 'David JM Kraemer', 'Devin Balkcom'],
             highlightAuthorIndex: 0,
             doi: '10.1145/3586182.3615801',
-            artifacts: [
-                {
-                    title: 'Paper',
-                    href: 'https://dl.acm.org/doi/abs/',
-                    external: true,
-                }
-            ]
+            artifacts: []
         },
         {
             title: 'Automatic Generation and Teaching of Dance Lessons from Video',
@@ -72,18 +66,23 @@ let publications = $state(
             conference: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies',
             authors: ['Qijia Shao', 'Amy Sniffen', 'Julien Blanchet', 'Megan E Hillis', 'Xinyu Shi', 'Themistoklis K Haris', 'Jason Liu', 'Jason Lamberton', 'Melissa Malzkuhn', 'Lorna C Quandt', 'James Mahoney', 'David JM Kraemer', 'Xia Zhou', 'Devin Balkcom'],
             highlightAuthorIndex: 2,
-            doi: 'https://dl.acm.org/doi/abs/10.1145/3432211',
+            doi: '10.1145/3432211',
         }
     ] as Publication[]
 )
 </script>
 
-<main class="max-w-prose p-4 p-4 mx-auto">
-    <div class="prose">
-        <h1 class="font-slabserif">Publications</h1>
+<main class="max-w-prose prose p-4 p-4 mx-auto prose-headings:font-slabserif">
+    
+    <h1>Publications</h1>
+    
+
+    <div class="alert not-prose">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span><strong>Two</strong> additional papers are currently under review.</span>
     </div>
 
-    <div class="space-y-8 mt-4">
+    <div class="space-y-8 mt-8 not-prose">
     {#each publications as pub}
         <div class="font-serif">
             <h2 class="font-slabserif"><span class="">{pub.title}</span></h2>
