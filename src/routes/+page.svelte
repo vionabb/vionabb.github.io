@@ -1,6 +1,14 @@
 <script lang="ts">
     import LogoSvg from './logo.svg';
 
+    type TagType = 'primary' | 'neutral';
+    const tags: {title: string, type?: TagType}[] = [
+        {title: 'Human-Computer Interaction'},
+        {title: 'Movement Computing'},
+        {title: 'Ambient Computing'},
+        {title: 'Spatial Computing'},
+        {title: 'Robotics'},
+    ]
 </script>
 
 <article class="max-w-prose p-4 mx-auto prose prose-headings:font-slabserif">
@@ -30,6 +38,17 @@
     <!-- <p>
         I'm passionate about creating immersive experiences that inspire wonder, help people learn new skills, and connect people together in authentic ways.
     </p> -->
+
+    <h4>Areas of Interest</h4>
+    <div class="flex flex-wrap gap-1">
+    {#each tags as tag}
+        <span class="badge"
+            class:badge-primary={tag.type === 'primary'}
+            class:badge-neutral={tag.type === undefined || tag.type === 'neutral'}>
+            {tag.title}
+        </span>
+    {/each}
+    </div>
 
     <!-- TODO:
     <ul>
