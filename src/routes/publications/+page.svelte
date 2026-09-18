@@ -21,7 +21,7 @@ let publications = $state(
             title: 'Integrating a LLM into an Automatic Dance Practice Support System: Breathing Life Into The Virtual Coach',
             year: 2023,
             conference: 'Adjunct Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology',
-            authors: ['Julien Blanchet', 'Sixuan Han'],
+            authors: ['Viona Blanchet', 'Sixuan Han'],
             highlightAuthorIndex: 0,
             doi: '10.1145/3586182.3625119',
             artifacts: []
@@ -30,7 +30,7 @@ let publications = $state(
             title: 'LearnThatDance: Augmenting TikTok Dance Challenge Videos with an Interactive Practice Support System Powered by Automatically Generated Lesson Plans',
             year: 2023,
             conference: 'Adjunct Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology',
-            authors: ['Julien Blanchet', 'Megan E Hillis', 'Yeongji Lee', 'Qijia Shao', 'Xia Zhou', 'David JM Kraemer', 'Devin Balkcom'],
+            authors: ['Viona Blanchet', 'Megan E Hillis', 'Yeongji Lee', 'Qijia Shao', 'Xia Zhou', 'David JM Kraemer', 'Devin Balkcom'],
             highlightAuthorIndex: 0,
             doi: '10.1145/3586182.3615801',
             artifacts: []
@@ -39,7 +39,7 @@ let publications = $state(
             title: 'Automatic Generation and Teaching of Dance Lessons from Video',
             year: 2023,
             conference: 'HotMobile \'23: Proceedings of the 24th International Workshop on Mobile Computing Systems and Applications',
-            authors: ['Julien Blanchet', 'Megan E Hillis', 'Yeongji Lee', 'Qijia Shao', 'Xia Zhou', 'David JM Kraemer', 'Devin Balkcom'],
+            authors: ['Viona Blanchet', 'Megan E Hillis', 'Yeongji Lee', 'Qijia Shao', 'Xia Zhou', 'David JM Kraemer', 'Devin Balkcom'],
             highlightAuthorIndex: 0,
             doi: '10.1145/3572864.3581592',
             artifacts: []
@@ -48,7 +48,7 @@ let publications = $state(
             title: 'Soft Lattice Modules That Behave Independently and Collectively',
             year: 2022,
             conference: 'IEEE Robotics and Automation Letters',
-            authors: ['Luyang Zhao', 'Yijia Wu', 'Julien Blanchet', 'Maxine Perroni-Scharf', 'Xiaonan Huang', 'Joran Booth', 'Rebecca Kramer-Bottiglio', 'Devin Balkcom'],
+            authors: ['Luyang Zhao', 'Yijia Wu', 'Viona Blanchet', 'Maxine Perroni-Scharf', 'Xiaonan Huang', 'Joran Booth', 'Rebecca Kramer-Bottiglio', 'Devin Balkcom'],
             highlightAuthorIndex: 2,
             doi: '10.1109/LRA.2022.3160611',
         },
@@ -56,7 +56,7 @@ let publications = $state(
             title: 'Overlapping semantic representations of sign and speech in novice sign language learners',
             year: 2022,
             conference: 'Proceedings of the Annual Meeting of the Cognitive Science Society',
-            authors: ['Megan E Hillis', 'Brianna Aubrey', 'Julien Blanchet', 'Qijia Shao', 'Xia Zhou', 'Devin Balkcom', 'David JM Kraemer'],
+            authors: ['Megan E Hillis', 'Brianna Aubrey', 'Viona Blanchet', 'Qijia Shao', 'Xia Zhou', 'Devin Balkcom', 'David JM Kraemer'],
             highlightAuthorIndex: 2,
             nonDoiPaperLink: 'https://escholarship.org/uc/item/4bw8874x',
         },
@@ -64,7 +64,7 @@ let publications = $state(
             title: 'Teaching American Sign Language in Mixed Reality',
             year: 2020,
             conference: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies',
-            authors: ['Qijia Shao', 'Amy Sniffen', 'Julien Blanchet', 'Megan E Hillis', 'Xinyu Shi', 'Themistoklis K Haris', 'Jason Liu', 'Jason Lamberton', 'Melissa Malzkuhn', 'Lorna C Quandt', 'James Mahoney', 'David JM Kraemer', 'Xia Zhou', 'Devin Balkcom'],
+            authors: ['Qijia Shao', 'Amy Sniffen', 'Viona Blanchet', 'Megan E Hillis', 'Xinyu Shi', 'Themistoklis K Haris', 'Jason Liu', 'Jason Lamberton', 'Melissa Malzkuhn', 'Lorna C Quandt', 'James Mahoney', 'David JM Kraemer', 'Xia Zhou', 'Devin Balkcom'],
             highlightAuthorIndex: 2,
             doi: '10.1145/3432211',
         }
