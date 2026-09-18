@@ -15,7 +15,7 @@
 
     <h1 class="mb-2">
         Hi! I'm Viona
-        <aside class="badge badge-neutral">He/They</aside>
+        <aside class="badge badge-neutral">She/Her</aside>
     </h1>
 
     
